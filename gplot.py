@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env /ncrc/home2/Gustavo.Marques/anaconda2/bin/python
 
 class MyError(Exception):
   """
