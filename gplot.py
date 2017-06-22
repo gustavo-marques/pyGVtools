@@ -1,4 +1,4 @@
-#!/usr/bin/env /ncrc/home2/Gustavo.Marques/anaconda2/bin/python
+#!/usr/bin/env /glade/u/apps/ch/opt/python/2.7.13/gnu/6.2.0/bin/python
 
 class MyError(Exception):
   """
@@ -746,7 +746,8 @@ def makeGuessAboutCmap(clim=None, colormap=None):
     elif abs((vmax+vmin)/(vmax-vmin))<.01: plt.set_cmap('seismic') # Multi-signed symmetric data
     else: plt.set_cmap('spectral')
   landColor=[.5,.5,.5]
-  plt.gca().set_axis_bgcolor(landColor)
+  #plt.gca().set_axis_bgcolor(landColor)
+  plt.gca().set_facecolor(landColor)
   return (vmin, vmax)
 
 
